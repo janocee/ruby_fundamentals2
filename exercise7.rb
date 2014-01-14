@@ -3,7 +3,11 @@ students = {
   cohort2: 42,
   cohort3: 22
 }
-
-students.each do |cohort, num|
-	puts "#{cohort}: #{num} students"
+def allcohorts(learners)
+	learners.each do |cohort, num|
+		puts "#{cohort}: #{num} students"
+	end
 end
+
+allcohorts(students)
+
