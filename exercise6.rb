@@ -30,3 +30,6 @@ puts "The second item on the list is #{grocery_list[1]}."
 
 sort(grocery_list)
 
+grocery_list.delete("salmon")
+puts "The new list is:"
+add(grocery_list)
