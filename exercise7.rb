@@ -9,8 +9,16 @@ def allcohorts(learners)
 	end
 end
 
+def morecohorts(morelearners)
+	morelearners.each do |cohorts, nums| morelearners[cohorts] = nums*1.05 
+		puts "The new number of students for #{cohorts} is #{nums}."
+	end
+end
+
 allcohorts(students)
 
 students[:cohort4] = 43
 
 puts students.keys
+
+morecohorts(students)
