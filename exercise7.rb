@@ -11,3 +11,4 @@ end
 
 allcohorts(students)
 
+students[:cohort4] = 43
