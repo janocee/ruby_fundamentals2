@@ -8,7 +8,10 @@ def add(list)
 	list.each do |x|
 		puts "*#{x}"
 	end
-	if list.include?("bananas")
+end
+
+def includes(food)
+	if food.include?("bananas")
 		puts "You need to pick up bananas!"
 	else 
 		puts "You don't need to pick up bananas today."
@@ -16,5 +19,6 @@ def add(list)
 end
 
 add(grocery_list)
+includes(grocery_list)
 
 puts "Total number of items are #{grocery_list.length}."
