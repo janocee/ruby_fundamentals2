@@ -22,3 +22,4 @@ add(grocery_list)
 includes(grocery_list)
 
 puts "Total number of items are #{grocery_list.length}."
+puts "The second item on the list is #{grocery_list[1]}."
