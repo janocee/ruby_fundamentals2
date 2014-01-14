@@ -8,6 +8,11 @@ def add(list)
 	list.each do |x|
 		puts "*#{x}"
 	end
+	if list.include?("bananas")
+		puts "You need to pick up bananas!"
+	else 
+		puts "You don't need to pick up bananas today."
+	end
 end
 
 add(grocery_list)
