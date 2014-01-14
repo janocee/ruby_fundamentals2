@@ -11,3 +11,5 @@ def add(list)
 end
 
 add(grocery_list)
+
+puts "Total number of items are #{grocery_list.length}."
