@@ -22,3 +22,6 @@ students[:cohort4] = 43
 puts students.keys
 
 morecohorts(students)
+
+students.delete(:cohort2)
+allcohorts(students)
