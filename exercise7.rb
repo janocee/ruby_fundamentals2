@@ -10,9 +10,15 @@ def allcohorts(learners)
 end
 
 def morecohorts(morelearners)
-	morelearners.each do |cohorts, nums| morelearners[cohorts] = nums*1.05 
-		puts "The new number of students for #{cohorts} is #{nums}."
+	morelearners.each do |cohorts, nums|  (morelearners[cohorts]= (nums*1.05).round )
+		puts "The new number of #{cohorts} is #{morelearners[cohorts]}."
 	end
+end
+
+def total(students)
+	totalstudents = 0
+	students.each {|cohort, num| totalstudents += students[cohort]}
+	puts puts "The total number of students in all cohorts is #{totalstudents}."
 end
 
 allcohorts(students)
@@ -25,3 +31,5 @@ morecohorts(students)
 
 students.delete(:cohort2)
 allcohorts(students)
+
+total(students)
